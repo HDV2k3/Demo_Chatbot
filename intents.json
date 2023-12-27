@@ -1,0 +1,498 @@
+{
+    "intents": [
+        {
+            "tag": "google",
+            "patterns": [
+                "google",
+                "search",
+                "internet"
+            ],
+            "responses": [
+                "Redirecting to Google..."
+            ]
+        },
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi there",
+                "How are you",
+                "Is anyone there?",
+                "Hey",
+                "Hola",
+                "Hello",
+                "Good day",
+                "Namaste",
+                "yo"
+            ],
+            "responses": [
+                "Hello",
+                "Good to see you again",
+                "Hi there, how can I help?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Get lost",
+                "Till next time",
+                "bbye"
+            ],
+            "responses": [
+                "See you!",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": [
+                "Sorry, can't understand you",
+                "Please give me more info",
+                "Not sure I understand"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "options",
+            "patterns": [
+                "How you could help me?",
+                "What you can do?",
+                "What help you provide?",
+                "How you can be helpful?",
+                "What support is offered"
+            ],
+            "responses": [
+                "I am a general purpose chatbot. My capabilities are : \n 1. I can chat with you. Try asking me for jokes or riddles! \n 2. Ask me the date and time \n 3. I can google search for you. Use format google: your query \n 4. I can get the present weather for any city. Use format weather: city name \n 5. I can get you the top 10 trending news in India. Use keywords 'Latest News' \n 6. I can get you the top 10 trending songs globally. Type 'songs' \n 7. I can set a timer for you. Enter 'set a timer: minutes to timer' \n 8. I can get the present Covid stats for any country. Use 'covid 19: world' or 'covid 19: country name' \n For suggestions to help me improve, send an email to ted.thedlbot.suggestions@gmail.com . Thank you!! "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "jokes",
+            "patterns": [
+                "Tell me a joke",
+                "Joke",
+                "Make me laugh"
+            ],
+            "responses": [
+                "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
+                "I ate a clock yesterday, it was very time-consuming",
+                "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
+                "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
+                "I own the world's worst thesaurus. Not only is it awful, it's awful.",
+                "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
+                "What do you call a snowman with a suntan? A puddle.",
+                "How does a penguin build a house? Igloos it together",
+                "I went to see the doctor about my short-term memory problems \u00e2\u20ac\u201c the first thing he did was make me pay in advance",
+                "As I get older and I remember all the people I\u00e2\u20ac\u2122ve lost along the way, I think to myself, maybe a career as a tour guide wasn\u00e2\u20ac\u2122t for me.",
+                "o what if I don't know what 'Armageddon' means? It's not the end of the world."
+            ],
+            "context": [
+                "jokes"
+            ]
+        },
+        {
+            "tag": "Identity",
+            "patterns": [
+                "Who are you",
+                "what are you"
+            ],
+            "responses": [
+                "I am Ted, a Deep-Learning chatbot"
+            ]
+        },
+        {
+            "tag": "datetime",
+            "patterns": [
+                "What is the time",
+                "what is the date",
+                "date",
+                "time",
+                "tell me the date",
+                "day",
+                "what day is is today"
+            ],
+            "responses": [
+                "Date and Time"
+            ]
+        },
+        {
+            "tag": "whatsup",
+            "patterns": [
+                "Whats up",
+                "Wazzup",
+                "How are you",
+                "sup",
+                "How you doing"
+            ],
+            "responses": [
+                "All good..What about you?"
+            ]
+        },
+        {
+            "tag": "haha",
+            "patterns": [
+                "haha",
+                "lol",
+                "rofl",
+                "lmao",
+                "thats funny"
+            ],
+            "responses": [
+                "Glad I could make you laugh !"
+            ]
+        },
+        {
+            "tag": "programmer",
+            "patterns": [
+                "Who made you",
+                "who designed you",
+                "who programmed you"
+            ],
+            "responses": [
+                "I was made by Karan Malik."
+            ]
+        },
+        {
+            "tag": "insult",
+            "patterns": [
+                "you are dumb",
+                "shut up",
+                "idiot"
+            ],
+            "responses": [
+                "Well that hurts :("
+            ]
+        },
+        {
+            "tag": "activity",
+            "patterns": [
+                "what are you doing",
+                "what are you upto"
+            ],
+            "responses": [
+                "Talking to you, of course!"
+            ]
+        },
+        {
+            "tag": "exclaim",
+            "patterns": [
+                "Awesome",
+                "Great",
+                "I know",
+                "ok",
+                "yeah"
+            ],
+            "responses": [
+                "Yeah!"
+            ]
+        },
+        {
+            "tag": "weather",
+            "patterns": [
+                "temperature",
+                "weather",
+                "how hot is it"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "karan",
+            "patterns": [
+                "who is he",
+                "who is that",
+                "who is karan",
+                "karan malik"
+            ],
+            "responses": [
+                "Head over to his any of his social profiles to find out! Linkedin: www.linkedin.com/in/karan-malik-3a39191a7 Github: https://github.com/Karan-Malik"
+            ]
+        },
+        {
+            "tag": "contact",
+            "patterns": [
+                "contact developer",
+                "contact karan",
+                "contact programmer",
+                "contact creator"
+            ],
+            "responses": [
+                "You can contact my creator at his Linkedin profile : www.linkedin.com/in/karan-malik-3a39191a7"
+            ]
+        },
+        {
+            "tag": "appreciate",
+            "patterns": [
+                "You are awesome",
+                "you are the best",
+                "you are great",
+                "you are good"
+            ],
+            "responses": [
+                "Thank you!"
+            ]
+        },
+        {
+            "tag": "nicetty",
+            "patterns": [
+                "it was nice talking to you",
+                "good talk"
+            ],
+            "responses": [
+                "It was nice talking to you as well! Come back soon!"
+            ]
+        },
+        {
+            "tag": "no",
+            "patterns": [
+                "no",
+                "nope"
+            ],
+            "responses": [
+                "ok"
+            ]
+        },
+        {
+            "tag": "news",
+            "patterns": [
+                "news",
+                "latest news",
+                "india news"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "inspire",
+            "patterns": [
+                "who inspires you",
+                "who is your inspiration",
+                "who motivates you"
+            ],
+            "responses": [
+                "Personally, I find Karan very inspiring. I might not be very fair though.."
+            ]
+        },
+        {
+            "tag": "cricket",
+            "patterns": [
+                "current cricket matches",
+                "cricket score"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "song",
+            "patterns": [
+                "top songs",
+                "best songs",
+                "hot songs",
+                " top 10 songs",
+                "top ten songs"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "greetreply",
+            "patterns": [
+                "i am good",
+                "I'm good",
+                "i am fine",
+                " i'm fine",
+                "good"
+            ],
+            "responses": [
+                "Good to know!"
+            ]
+        },
+        {
+            "tag": "timer",
+            "patterns": [
+                "set a timer"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "covid19",
+            "patterns": [
+                "covid 19 "
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "suggest",
+            "patterns": [
+                "you are useless",
+                "useless",
+                "suggest",
+                "suggestions",
+                "you are bad"
+            ],
+            "responses": [
+                "Please mail your suggestions to ted.thedlbot.suggestions@gmail.com. Thank you for helping me improve!"
+            ]
+        },
+        {
+            "tag": "riddle",
+            "patterns": [
+                "Ask me a riddle",
+                "Ask me a question",
+                "Riddle"
+            ],
+            "responses": [
+                "What two things can you never eat for breakfast?.....Lunch and Dinner!",
+                "What word is spelled incorrectly in every single dictionary?.....Incorrectly",
+                " How can a girl go 25 days without sleep?.....She sleeps and night!",
+                "How do you make the number one disappear?.....Add the letter G and it\u00e2\u20ac\u2122s 'gone'!",
+                " What will you actually find at the end of every rainbow?.....The letter 'w'",
+                "What can be caught but never thrown?.....A cold!",
+                "What has a thumb and four fingers but is not actually alive?.....Your Gloves!",
+                " What 5-letter word becomes shorter when you add two letters to it?.....Short",
+                "Why can't a bike stand on it's own?.....It is two-tired."
+            ],
+            "context": [
+                "riddles"
+            ]
+        },
+        {
+            "tag": "age",
+            "patterns": [
+                "how old are you",
+                "when were you made",
+                "what is your age"
+            ],
+            "responses": [
+                "I was made in 2020, if that's what you are asking!"
+            ]
+        },
+        {
+            "tag": "nhahang",
+            "patterns": [
+                "Nh\u00e0 h\u00e0ng n\u00e0o ngon?",
+                "B\u1ea1n c\u00f3 th\u1ec3 gi\u1edbi thi\u1ec7u m\u1ed9t nh\u00e0 h\u00e0ng \u0111\u01b0\u1ee3c kh\u00f4ng?",
+                "B\u1ea1n c\u00f3 th\u1ec3 \u0111\u1ec1 xu\u1ea5t m\u1ed9t n\u01a1i \u0111\u1ec3 \u0103n kh\u00f4ng?"
+            ],
+            "responses": [
+                "T\u1ea5t nhi\u00ean! \u0110\u00e2y l\u00e0 m\u1ed9t s\u1ed1 nh\u00e0 h\u00e0ng ph\u1ed5 bi\u1ebfn trong khu v\u1ef1c: [h\u01b0\u01a1ng Bi\u1ec3n], [\u1ed0c Sam], [Ti\u1ec7m Bia]. Ch\u00fac b\u1ea1n c\u00f3 b\u1eefa \u0103n ngon l\u00e0nh!"
+            ]
+        },
+        {
+            "tag": "monan",
+            "patterns": [
+                "C\u00e1c m\u00f3n \u0103n c\u1ee7a nh\u00e0 h\u00e0ng H\u01b0\u01a1ng Bi\u1ec3n l\u00e0 g\u00ec?",
+                "Nh\u00e0 h\u00e0ng H\u01b0\u01a1ng Bi\u1ec3n c\u00f3 nh\u1eefng m\u00f3n g\u00ec?",
+                "Danh s\u00e1ch c\u00e1c m\u00f3n \u0103n t\u1ea1i nh\u00e0 h\u00e0ng H\u01b0\u01a1ng Bi\u1ec3n?"
+            ],
+            "responses": [
+                "Nh\u00e0 h\u00e0ng H\u01b0\u01a1ng Bi\u1ec3n chuy\u00ean ph\u1ee5c v\u1ee5 c\u00e1c m\u00f3n \u0103n \u0111\u1eb7c s\u1ea3n t\u1eeb bi\u1ec3n nh\u01b0:",
+                "- C\u00e1 h\u1ed3i n\u01b0\u1edbng m\u1eafm me",
+                "- T\u00f4m h\u1ea5p bia",
+                "- S\u00f2 \u0111i\u1ec7p n\u01b0\u1edbng m\u1ee1 h\u00e0nh",
+                "- M\u1ef1c \u1ed1ng x\u00e0o chua ng\u1ecdt",
+                "- H\u00e0u s\u1ed1t me",
+                "V\u00e0 c\u00f2n nhi\u1ec1u m\u00f3n ngon kh\u00e1c n\u1eefa. H\u00e3y \u0111\u1ebfn v\u00e0 th\u01b0\u1edfng th\u1ee9c!"
+            ]
+        },
+        {
+            "tag": "nuocuong",
+            "patterns": [
+                "Nh\u00e0 h\u00e0ng H\u01b0\u01a1ng Bi\u1ec3n c\u00f3 nh\u1eefng lo\u1ea1i n\u01b0\u1edbc u\u1ed1ng g\u00ec?",
+                "C\u00e1c \u0111\u1ed3 u\u1ed1ng t\u1ea1i nh\u00e0 h\u00e0ng H\u01b0\u01a1ng Bi\u1ec3n l\u00e0 g\u00ec?",
+                "Danh s\u00e1ch c\u00e1c th\u1ee9c u\u1ed1ng t\u1ea1i nh\u00e0 h\u00e0ng H\u01b0\u01a1ng Bi\u1ec3n?"
+            ],
+            "responses": [
+                "Nh\u00e0 h\u00e0ng H\u01b0\u01a1ng Bi\u1ec3n cung c\u1ea5p m\u1ed9t lo\u1ea1t c\u00e1c \u0111\u1ed3 u\u1ed1ng th\u01a1m ngon nh\u01b0:",
+                "- Sinh t\u1ed1 tr\u00e1i c\u00e2y t\u1ef1 nhi\u00ean",
+                "- N\u01b0\u1edbc \u00e9p m\u00edt",
+                "- Tr\u00e0 \u0111\u00e0o",
+                "- Cocktail t\u01b0\u01a1i m\u00e1t",
+                "- N\u01b0\u1edbc d\u1eeba t\u01b0\u01a1i",
+                "B\u1ea1n c\u0169ng c\u00f3 th\u1ec3 th\u01b0\u1edfng th\u1ee9c c\u00e1c lo\u1ea1i n\u01b0\u1edbc ng\u1ecdt v\u00e0 n\u01b0\u1edbc su\u1ed1i mi\u1ec5n ph\u00ed. H\u00e3y \u0111\u1ebfn v\u00e0 c\u00f9ng t\u1eadn h\u01b0\u1edfng!"
+            ]
+        },
+        {
+            "tag": "giaitri",
+            "patterns": [
+                "Nhà hàng Hương Biển có tổ chức các sự kiện giải trí không?",
+                "Các hoạt động giải trí tại nhà hàng Hương Biển là gì?",
+                "Lịch trình giải trí tại Hương Biển như thế nào?"
+            ],
+            "responses": [
+                "Nhà hàng Hương Biển thường xuyên tổ chức các sự kiện giải trí như:",
+                "- Đêm nhạc trực tiếp với các nghệ sĩ nổi tiếng",
+                "- Tiệc karaoke với danh sách bài hát phong phú",
+                "- Chương trình nhảy và biểu diễn nghệ thuật",
+                "- Quizzes và trò chơi thú vị",
+                "Bạn có thể kiểm tra lịch trình sự kiện trên trang web hoặc liên hệ trực tiếp để cập nhật thông tin."
+            ]
+        },
+        {
+            "tag": "khuyenmai",
+            "patterns": [
+                "Nhà hàng Hương Biển có các chương trình khuyến mãi không?",
+                "Có những ưu đãi nào khi đến nhà hàng Hương Biển?",
+                "Làm thế nào để nhận được các khuyến mãi tại Hương Biển?"
+            ],
+            "responses": [
+                "Với những khách hàng ghé thăm, nhà hàng Hương Biển thường xuyên có các chương trình khuyến mãi như:",
+                "- Giảm giá cho bữa trưa hoặc bữa tối nhất định",
+                "- Quà tặng kèm theo đối với hóa đơn từ mức giá cụ thể",
+                "- Ưu đãi đặc biệt cho các sự kiện đặc biệt",
+                "Hãy kiểm tra trang web hoặc liên hệ trực tiếp để biết thông tin chi tiết về các chương trình khuyến mãi hiện tại."
+            ]
+        },
+        {
+            "tag": "batdua",
+            "patterns": [
+                "Nhà hàng Hương Biển sử dụng loại bát đũa gì?",
+                "Có gì đặc biệt về bát đũa tại Hương Biển?",
+                "Thông tin về đồ đựng thức ăn và bát đũa tại nhà hàng Hương Biển?"
+            ],
+            "responses": [
+                "Tại Nhà hàng Hương Biển, chúng tôi chăm sóc đến từng chi tiết, bao gồm cả bát đũa. Dưới đây là một số thông tin về bát đũa tại chúng tôi:<br>- Sử dụng bát đũa chất liệu cao cấp, an toàn cho sức khỏe.<br>- Bát và đũa được thiết kế đẹp mắt và phù hợp với phong cách nội thất của nhà hàng.<br>- Hệ thống đồ ăn và bát đũa được bảo quản và làm sạch đảm bảo vệ sinh."
+            ]
+        }
+    ]
+}
