@@ -8,3 +8,4 @@ billboard
 pygame
 COVID19Py
 Pickle
+numpy
