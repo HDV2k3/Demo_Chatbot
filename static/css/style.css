@@ -1,0 +1,94 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: darkgray;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+#chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black; /* Đặt màu nền của khung chat thành đen */
+}
+
+#chat-header {
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    background-color: #fff; /* Màu nền của phần tiêu đề */
+}
+#chat-logo {
+    width: 30%; /* Chiều rộng của logo */
+    height:  100%; /* Chiều cao của logo */
+    margin-right: 8px; /* Khoảng cách từ logo đến các phần tử khác trong header */
+}
+#chat-messages {
+    padding: 10px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.bot-message {
+    background-color: #f1f1f1;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#chat-input {
+    padding: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+    flex-shrink: 0;
+
+}
+
+#user-input {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#send-button {
+    padding: 8px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#send-button img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+.user-message {
+    background-color:red; /* Màu vàng cho câu hỏi của người dùng */
+    padding: 8px;
+    border-radius: 5px;
+    
+}
+
+.bot-message {
+    background-color: #d4edda; /* Màu xanh lá cho câu trả lời của chatbot */
+    padding: 8px;
+    border-radius: 5px;
+    color: #155724; /* Màu chữ tương ứng với màu nền câu trả lời */
+}

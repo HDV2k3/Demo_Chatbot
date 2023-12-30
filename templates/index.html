@@ -1,82 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Chatbot</title>
+    <title>Chatbot - Hutech</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('#user_input').keypress(function(event){
-                if(event.which == 13){
-                    event.preventDefault();
-                    $('form').submit();
-                }
-            });
-
-            $('form').on('submit', function(event){
-                event.preventDefault();
-                var user_message = $('#user_input').val();
-                $('#chatbox').append('<p class="user-message">' + user_message + '</p>');
-                $('#user_input').val('');
-                $.ajax({
-                    url: '/get_response',
-                    type: 'POST',
-                    data: {user_message: user_message},
-                    success: function(response){
-                        $('#chatbox').append('<p class="bot-message">' + response + '</p>');
-                        $('#chatbox').scrollTop($('#chatbox')[0].scrollHeight);
-                    }
-                });
-            });
-        });
-    </script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-        }
-        #chatbox {
-            height: 400px;
-            overflow-y: scroll;
-            border: 1px solid #ccc;
-            padding: 10px;
-        }
-        .user-message {
-            color: blue;
-            margin: 5px 0;
-        }
-        .bot-message {
-            color: red;
-            margin: 5px 0;
-        }
-        form {
-            margin-top: 20px;
-            display: flex;
-        }
-        input[type="text"] {
-            flex-grow: 1;
-            padding: 5px;
-            font-size: 16px;
-        }
-        input[type="submit"] {
-            padding: 5px 10px;
-            font-size: 16px;
-            background-color: #4CAF50;
-            border: none;
-            color: white;
-            cursor: pointer;
-        }
-    </style>
+    <script src="/static/js/main.js"></script>
 </head>
 <body>
-    <h1>Chatbot</h1>
-    <div id="chatbox"></div>
-    <form method="POST" action="">
-        <input type="text" id="user_input" autofocus autocomplete="off">
-        <input type="submit" value="Send">
-    </form>
+    <div id="chat-container">
+        <div id="chat-header">
+            <img src="/static/img/logo-hutech.png" alt="Logo" id="chat-logo">
+            <h1>Chatbot - Hutech</h1>
+        </div>
+        <div id="chat-messages">
+            <div class="message">
+                <p class="bot-message">Welcome to Chatbot Of Student Hutech</p>
+            </div>
+        </div>
+        <div id="chat-input">
+            <form id="message-form" method="POST" action="">
+                <input type="text" id="user-input" autofocus autocomplete="off" placeholder="Type your message...">
+                <button type="submit" id="send-button"><img src="/static/img/send-icon.png" alt="Send"></button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

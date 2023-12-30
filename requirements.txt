@@ -1,0 +1,10 @@
+nltk
+keras
+googlesearch-python
+webbrowser
+requests
+pycricbuzz
+billboard
+pygame
+COVID19Py
+Pickle

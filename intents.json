@@ -493,6 +493,42 @@
             "responses": [
                 "Tại Nhà hàng Hương Biển, chúng tôi chăm sóc đến từng chi tiết, bao gồm cả bát đũa. Dưới đây là một số thông tin về bát đũa tại chúng tôi:<br>- Sử dụng bát đũa chất liệu cao cấp, an toàn cho sức khỏe.<br>- Bát và đũa được thiết kế đẹp mắt và phù hợp với phong cách nội thất của nhà hàng.<br>- Hệ thống đồ ăn và bát đũa được bảo quản và làm sạch đảm bảo vệ sinh."
             ]
+        },
+        {
+            "tag": "nganhhoc",
+            "patterns": [
+                "Có những ngành học nào tại Trường HUTECH?",
+                "Cho tôi biết về danh sách ngành học tại HUTECH.",
+                "Tôi muốn tìm hiểu về các ngành học ở HUTECH."
+            ],
+            "responses": [
+                "Trường Đại học Công nghệ TP.HCM (HUTECH) cung cấp một loạt các ngành học đa dạng. Dưới đây là một số ngành học tiêu biểu tại HUTECH:\n",
+        "- Công nghệ phần mềm\n",
+        "- Kỹ thuật máy tính\n",
+        "- Hệ thống thông tin\n",
+        "- Công nghệ thông tin\n",
+        "- Kỹ thuật điện, điện tử\n",
+        "- Kỹ thuật ô tô\n",
+        "- Kỹ thuật cơ khí\n",
+        "- Kỹ thuật xây dựng\n",
+        "- Kỹ thuật công trình giao thông\n",
+        "- Quản trị kinh doanh\n",
+        "- Kế toán\n",
+        "- Tiếng Anh\n",
+        "Đây chỉ là một số ngành học đại diện và còn nhiều ngành học khác. Bạn có thể xem danh sách đầy đủ các ngành học trên trang web chính thức của HUTECH hoặc liên hệ trực tiếp với trường để biết thông tin chi tiết."
+            ]
+        },
+        {
+            "tag": "daotao",
+            "patterns": [
+                "Có những ngành học nào được đào tạo tại Trường HUTECH?",
+                "Cho tôi biết về danh sách ngành đào tạo  tại HUTECH.",
+                "Tôi muốn tìm hiểu về các ngành được đào tạo ở HUTECH."
+            ],
+            "responses": [
+                "Trường Đại học Công nghệ TP.HCM (HUTECH) cung cấp một loạt các ngành học đa dạng. Dưới đây là một số ngành học tiêu biểu tại HUTECH:<br>- Công nghệ phần mềm.<br>- Kỹ thuật máy tính<br>- Công nghệ thông tin<br>- Kỹ thuật điện, điện tử<br>- Kỹ thuật ô tô<br>"
+        
+            ]
         }
     ]
 }

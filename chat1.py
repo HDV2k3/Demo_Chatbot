@@ -14,7 +14,6 @@ import billboard
 import time
 from pygame import mixer
 import COVID19Py
-import streamlit as st
 nltk.download('punkt')
 nltk.download('wordnet')
 from nltk.stem import WordNetLemmatizer
